@@ -23,7 +23,7 @@ const parseService = (service, availablePinningServices) => {
  * @property {string} cid
  * @property {Array<string>} [delegates] e.g. ["/dnsaddr/pin-service.example.com"]
 */
-export default {
+const pinningBundle = {
   name: 'pinning',
   reducer: (state = {
     remotePins: [],
@@ -177,3 +177,4 @@ export default {
     store.doFetchPinningServices()
   }
 }
+export default pinningBundle
